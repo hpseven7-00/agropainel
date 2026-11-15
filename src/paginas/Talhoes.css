@@ -1,0 +1,177 @@
+.pagina-talhao {
+  width: min(100% - 2rem, 1100px);
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.titulo-pagina {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.titulo-pagina h1,
+.pagina-talhao h1 {
+  margin: 0.3rem 0 1rem;
+}
+
+.filtros-talhao,
+.formulario-talhao {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.filtros-talhao label,
+.formulario-talhao label {
+  display: grid;
+  align-content: start;
+  gap: 0.4rem;
+}
+
+.filtros-talhao input,
+.filtros-talhao select,
+.formulario-talhao input,
+.formulario-talhao select {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 2.6rem;
+  padding: 0.5rem;
+  border: 1px solid #9ca99e;
+  border-radius: 0.35rem;
+  background: #fff;
+  color: inherit;
+  font: inherit;
+}
+
+.lista-talhoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 1rem;
+}
+
+.cartao-talhao {
+  padding: 1rem;
+  border: 1px solid #d5ddd5;
+  border-radius: 0.6rem;
+  background: #fff;
+}
+
+.cartao-talhao h2 {
+  margin-top: 0;
+}
+
+.valor-resumo {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.etiqueta-situacao {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.situacao-colhido,
+.situacao-desenvolvimento {
+  color: #234b29;
+}
+
+.situacao-aguardando,
+.situacao-proxima {
+  color: #795300;
+}
+
+.situacao-ponto {
+  color: #8d2929;
+}
+
+.link-retorno {
+  margin-top: 0;
+}
+
+.botao-link,
+.acoes-formulario button {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  border: 0;
+  border-radius: 0.35rem;
+  background: #356b3b;
+  color: #fff;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.formulario-talhao {
+  max-width: 720px;
+}
+
+.secao-operacoes {
+  margin-top: 2rem;
+}
+
+.lista-operacoes {
+  display: grid;
+  gap: 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.resumo-relatorio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 1rem;
+}
+
+.lista-relatorio {
+  display: grid;
+  gap: 0.6rem;
+  padding-left: 1.25rem;
+}
+
+.resumo-relatorio .cartao-talhao {
+  margin: 0;
+}
+
+.formulario-operacao {
+  padding: 1rem;
+  border: 1px solid #d5ddd5;
+  border-radius: 0.6rem;
+  background: #fff;
+}
+
+.erro-campo {
+  color: #a42626;
+  font-size: 0.9rem;
+}
+
+.acoes-formulario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.acoes-formulario .botao-perigo {
+  background: #a42626;
+}
+
+.lista-vazia {
+  padding: 1rem;
+  border: 1px dashed #9ca99e;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 520px) {
+  .titulo-pagina {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

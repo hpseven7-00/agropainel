@@ -55,13 +55,13 @@ function respostaValida(valor: unknown): valor is RespostaOpenMeteo {
   const datas = dias.time
   const listasValidas =
     Array.isArray(datas) &&
-    datas.length >= 7 &&
     datas.every((dia) => typeof dia === 'string') &&
     CAMPOS_DIARIOS.every(
       (campo) =>
         eListaNumerica(dias[campo]) && dias[campo].length === datas.length,
     )
 
+  // Arrays vazios são válidos para que a tela possa mostrar o estado sem previsão.
   return atuaisValidos && listasValidas
 }
 

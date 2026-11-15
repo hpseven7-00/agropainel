@@ -3,3 +3,16 @@ main {
   margin: 0 auto;
   padding: 2rem;
 }
+
+.navegacao {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 0.8rem max(1rem, calc((100% - 1100px) / 2));
+  background: #e8efe8;
+}
+
+.navegacao a {
+  color: #234b29;
+  font-weight: 700;
+}

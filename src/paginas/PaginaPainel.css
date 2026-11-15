@@ -34,13 +34,9 @@ button {
   cursor: pointer;
 }
 
-:focus-visible {
-  outline: 3px solid #347a43;
-  outline-offset: 2px;
-}
-
 .resumo-clima,
-.previsao {
+.previsao,
+.lista-colheitas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr));
   margin: 1rem 0 2rem;
@@ -48,6 +44,14 @@ button {
 
 .resumo-clima {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+}
+
+.resumo-safra {
+  margin-bottom: 2rem;
+}
+
+.lista-colheitas {
+  padding-left: 1.5rem;
 }
 
 .cartao {
